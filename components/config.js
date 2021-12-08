@@ -11,6 +11,7 @@ const config = {
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     youtube: "https://www.youtube.com/",
+    github: "https://github.com/theabbie/mailblog",
   },
   blogListHeading: "Blog Posts",
   revalidate: 1800
