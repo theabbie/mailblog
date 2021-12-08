@@ -1,4 +1,4 @@
-# mailblog
+# MailBlog - Inbox powered blog
 
 ![mailblog](https://user-images.githubusercontent.com/17960677/145203419-09243272-0e8f-4974-8843-c21361133a00.png)
 
