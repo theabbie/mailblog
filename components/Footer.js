@@ -14,6 +14,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaYoutube,
+  FaGithub,
 } from "react-icons/fa";
 import config from "./config";
 
@@ -58,6 +59,9 @@ export default function SmallWithSocial() {
       >
         <Text>{config.footer}</Text>
         <Stack direction={"row"} spacing={6}>
+          <SocialButton label={"GitHub"} href={config.socials.github}>
+            <FaGithub />
+          </SocialButton>
           <SocialButton label={"Facebook"} href={config.socials.facebook}>
             <FaFacebook />
           </SocialButton>

@@ -43,21 +43,17 @@ export default function AuthorCard() {
           }}
         />
         <Heading fontSize={"2xl"} fontFamily={"body"}>
-          Lindsey James
+          John Doe
         </Heading>
         <Text fontWeight={600} color={"gray.500"} mb={4}>
-          @lindsey_jam3s
+          @theabbie
         </Text>
         <Text
           textAlign={"center"}
           color={useColorModeValue("gray.700", "gray.400")}
           px={3}
         >
-          Actress, musician, songwriter and artist. PM for work inquires or{" "}
-          <Link href={"#"} color={"blue.400"}>
-            #tag
-          </Link>{" "}
-          me in your posts
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>

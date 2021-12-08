@@ -63,7 +63,7 @@ npm run build
 npm run start
 ```
 
-`revalidate` is set to 30 minutes (1800 seconds), you can change that, it's the duration after which list updates.
+`revalidate` is set to 30 minutes (1800 seconds), you can change that in [components/config.js](components/config.js), it's the duration after which list updates.
 
 You can also trigger fetching emails by visiting `localhost:3000/api/refresh`, which will populate the database with new unread emails.
 
