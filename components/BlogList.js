@@ -1,19 +1,15 @@
 import React from "react";
 import {
   Box,
+  Flex,
   Heading,
   Link,
   Image,
   Text,
-  Divider,
   HStack,
   Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
   useColorModeValue,
   Container,
-  VStack,
 } from "@chakra-ui/react";
 import config from "./config";
 
@@ -33,7 +29,13 @@ function BlogTags(props) {
 
 function BlogAuthor(props) {
   return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
+    <Flex
+      marginTop="2"
+      spacing="2"
+      display="flex"
+      alignItems="center"
+      direction={{ base: "column", md: "row" }}
+    >
       <Image
         borderRadius="full"
         boxSize="40px"
@@ -41,9 +43,9 @@ function BlogAuthor(props) {
         alt={`Avatar of ${props.name}`}
       />
       <Text fontWeight="medium">{props.name}</Text>
-      <Text>—</Text>
+      <Text display={{ base: "none", md: "inline" }}>—</Text>
       <Text>{props.date.toLocaleDateString()}</Text>
-    </HStack>
+    </Flex>
   );
 }
 
@@ -108,7 +110,11 @@ export default function BlogList({ blogs }) {
             >
               <BlogTags tags={["Engineering", "Product"]} />
               <Heading marginTop="1">
-                <Link textDecoration="none" href={"/blog/" + blog_id} _hover={{ textDecoration: "none" }}>
+                <Link
+                  textDecoration="none"
+                  href={"/blog/" + blog_id}
+                  _hover={{ textDecoration: "none" }}
+                >
                   {blog_title}
                 </Link>
               </Heading>
