@@ -13,6 +13,7 @@ const config = {
     youtube: "https://www.youtube.com/",
   },
   blogListHeading: "Blog Posts",
+  revalidate: 1800
 };
 
 export default config;

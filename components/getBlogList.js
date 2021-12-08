@@ -1,8 +1,10 @@
 const { Client } = require("pg");
 
 const queries = require("./queries");
+const refresh = require("./refresh");
 
 async function getBlogList() {
+  await refresh();
   const client = new Client({
     connectionString: process.env.DB,
     ssl: { rejectUnauthorized: false },

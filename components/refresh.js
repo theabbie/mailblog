@@ -15,8 +15,8 @@ async function refresh() {
     imap: {
       user: process.env.EMAIL,
       password: process.env.PASSWORD,
-      host: "imap.gmail.com",
-      port: 993,
+      host: process.env.IMAP_HOST,
+      port: process.env.IMAP_PORT,
       tls: true,
       tlsOptions: { rejectUnauthorized: false },
     },
