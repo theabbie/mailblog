@@ -1,4 +1,5 @@
 const imap = require("imap-simple");
+const cheerio = require("cheerio");
 const simpleParser = require("mailparser").simpleParser;
 const { Client } = require("pg");
 
@@ -35,8 +36,9 @@ async function refresh() {
         console.log(subject);
         const author_id = from.text.match(/\<(.*?)\>/)[1];
         const author_name = from.text.split("<")[0].trim();
+        const $ = cheerio.load(html);
         await client.query(queries.addAuthor, [author_id, author_name]);
-        await client.query(queries.addBlog, [subject, html, date, author_id]);
+        await client.query(queries.addBlog, [subject, html, $("p").text(), date, author_id]);
         resolve();
       });
     });
