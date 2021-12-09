@@ -2,7 +2,7 @@
 
 ![mailblog](https://user-images.githubusercontent.com/17960677/145203419-09243272-0e8f-4974-8843-c21361133a00.png)
 
-> MailBlog is a blog that is managed via your Email Inbox and allows you to create and manage your own blog posts by sending and email.
+> MailBlog is a blog that is managed via your Email Inbox and allows you to create and manage your own blog posts by sending an email.
 
 ## Email Configuration
 
